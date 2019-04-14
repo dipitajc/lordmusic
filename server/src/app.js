@@ -14,9 +14,9 @@ app.use(morgan('combined'))
 app.use(bodyParser.json()) /*afin de facilement parser des requêtes json*/
 app.use(cors()) /* permettre à n'importe quel client ou serveur d'accéder au serveur*/
 
-app.get ('/status' , (req, res) => {
+app.post ('/register' , (req, res) => {
     res.send ({
-        message: 'hello my name is jc'
+        message: `Hello ${req.body.email} your user has been correcly registered`
     })
 })
 app.listen (process.env.PORT || 8081)
