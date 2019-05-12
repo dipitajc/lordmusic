@@ -17,8 +17,8 @@ sera par défaut le contenu spécifier dans le script -->
      name="password"
      placeholder="password" />
      <br>
-     <button @click="register"> S'enregistrer </button> <!-- lorsqu'on cliquera sur le bouton on fera appel à une méthode register -->
-
+     <button @click="register"> S'enregistrer </button> <!-- lorsqu'on cliquera sur le bouton on fera
+      appel à une méthode register -->
   </div>
 </template>
 
